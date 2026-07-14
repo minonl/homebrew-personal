@@ -2,14 +2,14 @@
 
 ## How do I install these formulae?
 
-`brew install minonl/private-brew/<formula>`
+`brew install minonl/personal/<formula>`
 
-Or `brew tap minonl/private-brew` and then `brew install <formula>`.
+Or `brew tap minonl/personal` and then `brew install <formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
-tap "minonl/private-brew"
+tap "minonl/personal"
 brew "<formula>"
 ```
 
