@@ -45,7 +45,8 @@ cask "trae-cn" do
     bash_completion "#{staged_path}/resources/completions/bash/trae-cn"
     zsh_completion  "#{staged_path}/resources/completions/zsh/_trae-cn"
 
-    # FIXME: official casks require those from upstream rather then someone imagine those, so we have those here, thanks to ublue taps on bazzite
+    # FIXME: official casks require those from upstream rather then someone imagine 
+    # those, so we have those here, thanks to ublue taps on bazzite
     desktop_file = "#{staged_path}/trae-cn.desktop"
     url_handler_desktop_file = "#{staged_path}/trae-cn-url-handler.desktop"
     preflight do
