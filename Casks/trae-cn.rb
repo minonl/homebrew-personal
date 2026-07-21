@@ -2,11 +2,11 @@ cask "trae-cn" do
   arch arm: "arm64", intel: "x64"
   os macos: "darwin", linux: "linux"
 
-  version "2.3.53679"
-  sha256 arm:          "5b6cf1e4288edd1a00e9ebf1be7ad06e615b4452b5cf6bd11bc2042991a66cca",
-         intel:        "9086f37155ab0813d9e276134f2ccefeb1b7f879d7e16c090e854ce9d24288a7",
-         arm64_linux:  "54f68a005887b38a1ebb731fdd58dbc6115db6d0ca3712161e0e1934eecc4158",
-         x86_64_linux: "bdc62ba1f5e89bd396e629b0252670c587131667c4012220bffd6995ae79dfa9"
+  version "2.3.56916"
+  sha256 arm:          "ca9948fd3824bcb156b5a3973fdc31a4a09a5f6c2397e48d9cdbfbfb2cc68060",
+         intel:        "dd7eceeeb0e1aafa0b71a2688d7753855e5a4cec33a8e0d3031285543c37a471",
+         arm64_linux:  "95f945328f9f57c1e4e08efa96b5b3089dd0f3095d274d666ba19f0a7068ffa7",
+         x86_64_linux: "5cc025421213a013af4f5fb831d89de2c21fa4608793a5f62b42f576c70e56b1"
 
   url_end = on_system_conditional linux: "tar.gz", macos: "dmg"
 
@@ -45,7 +45,7 @@ cask "trae-cn" do
     bash_completion "#{staged_path}/resources/completions/bash/trae-cn"
     zsh_completion  "#{staged_path}/resources/completions/zsh/_trae-cn"
 
-    # FIXME: official casks require those from upstream rather then someone imagine 
+    # FIXME: official casks require those from upstream rather then someone imagine
     # those, so we have those here, thanks to ublue taps on bazzite
     desktop_file = "#{staged_path}/trae-cn.desktop"
     url_handler_desktop_file = "#{staged_path}/trae-cn-url-handler.desktop"
